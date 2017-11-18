@@ -19,7 +19,7 @@
 		</tr>
 		<tr>
 			<td><p>Киловатт-час</p><input id="KH" type="text"></td>
-			<td>1</td>
+			<td id="KH_to_KH"></td>
 			<td id="KH_to_JL"></td>
 			<td id="KH_to_CL"></td>
 			<td><button id="calculation_KH">Рассчёт</button></td>
@@ -27,7 +27,7 @@
 		<tr>
 			<td><p>Джоуль</p><input id="JL" type="text"></td>
 			<td id="JL_to_KH"></td>
-			<td>1</td>
+			<td id="JL_to_JL"></td>
 			<td id="JL_to_CL"></td>
 			<td><button id="calculation_JL">Рассчёт</button></td>
 		</tr>
@@ -35,10 +35,13 @@
 			<td><p>Килокалория</p><input id="CL" type="text"></td>
 			<td id="CL_to_KH"></td>
 			<td id="CL_to_JL"></td>
-			<td>1</td>
+			<td id="CL_to_CL"></td>
 			<td><button id="calculation_CL">Рассчёт</button></td>
 		</tr>
 	</table>
+
+
+
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>

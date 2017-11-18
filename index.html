@@ -38,16 +38,33 @@
 	
 	<h2>Калькулятор</h2>
 
-	<p>Число 1 <input id="num1" type="text"></p>
-	<p>Число 2 <input id="num2" type="text"></p>
+		<table id="tableCalc">
+		<tr>
+			<td></td>
+			<td>Киловатт-час</td>
+			<td>Джоуль</td>
+			<td>Калория</td>
+		</tr>
+		<tr>
+			<td><p>Киловатт-час</p><input type="text"></td>
+			<td>1</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><p>Джоуль</p><input type="text"></td>
+			<td></td>
+			<td>1</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><p>Калория</p><input type="text"></td>
+			<td></td>
+			<td></td>
+			<td>1</td>
+		</tr>
+	</table>
 
-	<button onclick='plus()'>Сумма</button>
-
-<!-- 	<p>Киловатт-час <input id="KH" type="text"></p>
-<p>Джоуль <input id="JL" type="text"></p>
-<p>Калория <input id="CL" type="text"></p> -->
-
-	<p>Результат <span id="result"></span></p>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="common.js"></script>

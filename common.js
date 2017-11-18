@@ -1,18 +1,31 @@
-function plus() {
+var KH = document.getElementById("KH").value;
+var JL = document.getElementById("JL").value;
+var CL = document.getElementById("CL").value;
 
-	var result = 0;
-	var num1 = 0;
-	var num2 = 0;
+var KH_to_JL = KH * 3600000;
+var KH_to_CL = KH * 859.8;
+var JL_to_KH = JL * 1/3600000;
+var JL_to_CL = JL * 1/4187;
+var CL_to_KH = CL * 1/859.8;
+var CL_to_JL = CL * 4187;
 
-	// num1 = $("#num1").value;
-	// num2 = $("#num2").value;
-	num1 = document.getElementById('num1').value;
-	num2 = document.getElementById('num2').value;
-	console.log(num1);
 
-	result = +num1 + +num2;
+$("#calculation_KH").click(function() {
+	$("#KH_to_JL").text(KH_to_JL);
+	$("#KH_to_CL").text(KH_to_CL);
+})
 
-	console.log(result);
+$("#calculation_JL").click(function() {
+	$("#JL_to_KH").text(JL_to_KH);
+	$("#JL_to_CL").text(JL_to_CL);
+})
 
-	$("#result").text(result);
-}
+$("#calculation_CL").click(function() {
+	$("#CL_to_KH").text(CL_to_KH);
+	$("#CL_to_JL").text(CL_to_JL);
+})
+
+
+
+
+// num1 = document.getElementById('num1').value;
